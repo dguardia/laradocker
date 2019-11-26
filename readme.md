@@ -15,12 +15,17 @@ readme.md
 $ composer create-project --prefer-dist laravel/laravel .
 
 ```
+usually the name is: "laradocker" you can use any then create your oen repo for this when Laravel is installed you cant push back in here.
+
+
 
 
 ### Step 2
 Next, use Docker's composer image to mount the directories that you will need for your Laravel project and avoid the overhead of installing Composer globally:
 
 ```bash
+$ cd laradocker
+
 $ docker run --rm -v $(pwd):/app composer install
 
 ```
